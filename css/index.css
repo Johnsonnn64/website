@@ -1,34 +1,17 @@
-@import "catppuccin.css";
+@import "base.css";
 
-html {
-  color: var(--text);
-  background-color: var(--crust);
-}
-
-main {
-  max-width: 720px;
-  margin: auto;
-}
-
-header {
-  font-size: 42px;
-  font-family: monospace;
-  text-align: center;
-  padding: 20px 0px;
-}
-
-.profile {
+#profile {
   display: block;
   width: 100%;
 }
 
-.prof-pic {
+#prof-pic {
   margin-left: auto;
   margin-right: auto;
   width: fit-content;
 }
 
-.profile img {
+#profile img {
   width: 400px;
   height: 400px;
   align-self: center;
@@ -36,13 +19,13 @@ header {
   object-fit: cover;
 }
 
-.prof-content {
+#prof-content {
   font-family: system-ui;
   margin: 0 60px 0 60px;
   display: flex;
 }
 
-.prof-content h1 {
+#prof-content h1 {
   margin: 0 30px 0 0;
   white-space: nowrap;
   padding: 10px 0;
@@ -50,44 +33,22 @@ header {
   align-items: center;
 }
 
-.prof-content p {
+#prof-content p {
   font-size: 18px;
 }
 
-nav {
+#footer {
   position: fixed;
   bottom: 0;
-  width: 720px;
-  height: 50px;
-  background-color: var(--base);
-}
-
-nav ul {
   width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: table;
-  table-layout: fixed;
-}
-
-nav li {
-  display: table-cell;
-  vertical-align: middle;
   text-align: center;
-  font-size: 16px;
-  font-family: monospace;
+  margin-bottom: 10px;
 }
 
-nav li:hover {
-  background-color: var(--mantle);
-}
-
-nav a {
+#footer li {
   display: block;
-  padding: 6px;
-  text-decoration: none;
+}
+
+#footer a {
   color: var(--text);
 }
-
